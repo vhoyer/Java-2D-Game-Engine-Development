@@ -8,7 +8,7 @@
 bin=./bin
 src=./src
 SRC := $(wildcard src/*.java)
-CLASSPATH=-classpath .:./bin:./assets:./res:
+CLASSPATH=-classpath .:./bin:./assets:./res:./src:
 
 list := $(SRC:src/%.java=$(bin)/%.class)
 
