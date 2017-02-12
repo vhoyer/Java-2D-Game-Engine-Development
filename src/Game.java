@@ -9,6 +9,7 @@ import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
 import javax.swing.JFrame;
+import io.github.vhoyer.game.gfx.SpriteSheet;
 
 public class Game extends Canvas implements Runnable {
 	public static final long serialVersionUID = 1L;
@@ -25,6 +26,8 @@ public class Game extends Canvas implements Runnable {
 
 	private BufferedImage image = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_RGB);
 	private int[] pixels = ((DataBufferInt)image.getRaster().getDataBuffer()).getData();
+
+	private SpriteSheet spriteSheet = new SpriteSheet("/sprite_sheet.png");
 
 	public Game() {
 		setMinimumSize(new Dimension(WIDTH * SCALE, HEIGHT * SCALE));
