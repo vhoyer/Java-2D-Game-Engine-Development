@@ -12,13 +12,14 @@ import javax.swing.JFrame;
 import io.github.vhoyer.game.gfx.SpriteSheet;
 import io.github.vhoyer.game.gfx.Screen;
 import io.github.vhoyer.game.gfx.Colours;
+import io.github.vhoyer.game.gfx.Font;
 
 public class Game extends Canvas implements Runnable {
 	public static final long serialVersionUID = 1L;
 
 	public static final int WIDTH = 160;
 	public static final int HEIGHT = WIDTH / 12 * 9;
-	public static final int SCALE = 3;
+	public static final int SCALE = 5;
 	public static final String NAME = "Game";
 
 	private JFrame frame;
@@ -152,6 +153,13 @@ public class Game extends Canvas implements Runnable {
 				screen.render(x << 3, y << 3, 0, Colours.get(555, 505, 055, 550), flipX, flipY);
 			}
 		}
+
+		String msg = "Hello World!!";
+		Font.render(msg,
+				screen,
+				screen.xOffset + screen.width /2 - ( msg.length()/2 * 8 ),
+				screen.yOffset + screen.height/2,
+				Colours.get(-1, -1, -1, 000));
 
 		for(int y = 0; y < screen.height; y++){
 			for(int x = 0; x < screen.width; x++){
