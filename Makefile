@@ -15,6 +15,9 @@ list := $(SRC:src/%.java=$(bin)/%.class)
 run: $(list)
 	java $(CLASSPATH) io.github.vhoyer.game.Game
 
+justrun:
+	java $(CLASSPATH) io.github.vhoyer.game.Game
+
 %: $(src)/%.java
 	javac -g -d $(bin) $(CLASSPATH) $^
 

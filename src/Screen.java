@@ -49,4 +49,9 @@ public class Screen {
 			}
 		}
 	}
+
+	public void setOffset(int x, int y){
+		xOffset = x;
+		yOffset = y;
+	}
 }
