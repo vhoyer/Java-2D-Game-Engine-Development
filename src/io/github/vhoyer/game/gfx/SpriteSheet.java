@@ -1,8 +1,8 @@
 package io.github.vhoyer.game.gfx;
 
+import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import javax.imageio.ImageIO;
 
 public class SpriteSheet {
 	

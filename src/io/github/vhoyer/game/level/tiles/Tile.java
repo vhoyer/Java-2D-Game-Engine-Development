@@ -1,7 +1,7 @@
 package io.github.vhoyer.game.level.tiles;
 
-import io.github.vhoyer.game.gfx.Screen;
 import io.github.vhoyer.game.level.Level;
+import io.github.vhoyer.game.gfx.Screen;
 import io.github.vhoyer.game.gfx.Colours;
 
 public abstract class Tile {
