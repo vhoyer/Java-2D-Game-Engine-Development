@@ -10,8 +10,8 @@ public class BasicTile
 	protected int tileColour;
 	private int scale = 1;
 
-	public BasicTile(int id, int x, int y, int tileColour){
-		super(id, false, false);
+	public BasicTile(int id, int x, int y, int tileColour, int levelColour){
+		super(id, false, false, levelColour);
 		this.tileID = id;
 		this.tileColour = tileColour;
 	}
