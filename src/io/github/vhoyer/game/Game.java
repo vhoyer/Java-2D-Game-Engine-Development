@@ -146,6 +146,7 @@ public class Game extends Canvas implements Runnable {
 
 		level.renderTiles(screen, xOffset, yOffset);
 		level.renderEntities(screen);
+		//Font.render("hello world!! hehe...", screen, 1, 1, Colours.get(-1, -1, -1, 000), 1);
 
 		for(int y = 0; y < screen.height; y++){
 			for(int x = 0; x < screen.width; x++){
